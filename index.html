@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>Моя первая веб-страница</title>
+        <!--Некоторые стили элементов вынесены в файл css для удобства-->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <nav style="background-color: #1c1c1c; border-style: solid; border-color: black; height: auto;">
-                <table style="width: 100%; text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 25px;">
-                    <td style="vertical-align: middle; "><p><a href="#">Главная</a></p></td>
-                    <td><p><a href="pages/about.html">О нас</a></p></td>
-                    <td><p><a href="pages/contacts.html">Контакты</a></p></td>
+            <!--Блок навигации-->
+            <nav>
+                <table>
+                    <tr>
+                        <td><p><a href="#">Главная</a></p></td>
+                        <td><p><a href="pages/about.html">Ещё</a></p></td>
+                        <td><p><a href="pages/contacts.html">Контакты</a></p></td>
+                    </tr>
                 </table>
             </nav>            
         </header>
-        <main>
-            <section style="width: 80%; border-style: outset; border-radius: 10px; margin-left: 10%; margin-top: 50px; box-shadow: 0px 0px 20px 20px rgb(28 28 28 / 30%); padding: 1% 1% 1% 1%;" >
-                <div style="display: inline;"><h1>Моя первая веб-страница</h1>
-                <h2>Про меня</h2>
-                <p>Меня зовут Татьяна. Я работаю <strong>маркетологом</strong>. Решил получше узнать смежную профессию, чтобы разобраться, как устроен веб.</p>
-                <p>Живу в Питере. Люблю кататься на велосипеде.</p>
-                <h2>Чему я хочу научиться</h2>
-                <p>На <em>этом</em> курсе я хотел бы научиться создавать сайты с нуля.</p>
+        <main style="align-items: center; display: flex; justify-content: center;">
+            <section>
+                <!--Первая часть страницы-->
+                <div style="display: inline-block; ">
+                    <h1>Моя первая веб-страница</h1>
+                    <h2>Про меня</h2>
+                    <p>Меня зовут Татьяна. Я работаю <strong>программистом</strong> в учреждении культуры.</p> 
+                    <p>По <strong>образованию</strong> прикладной информатик, но последние 5 лет работала методистом.</p>
+                    <h2>Чему я хочу научиться</h2>
+                    <p>На <em>этом</em> курсе я хотела бы вспомнить утерянные навыки и узнать что-то новое.</p>
                 </div>
-                <div style="align-self: left;">
-                    Какой-то текст
+                <!--Вторая часть страницы-->
+                <div style="display: inline-block; vertical-align: top; border-style: outset; border-radius: 20px; margin-left: auto; height: max-content;">
+                    <img style="vertical-align: middle; border-radius: 20px;" src="https://avatars.githubusercontent.com/u/178467676?s=400&u=34b460f55c0e6b8dabce7bdd222fc454372ba980&v=4" alt="Фото профиля">
                 </div>
             </section>
         </main>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>О нас – Моя первая веб-страница</title>
@@ -7,17 +7,34 @@
     </head>
     <body>
         <header>
-            <nav style="background-color: #1c1c1c; border-style: solid; border-color: black; height: auto;">
-                <table style="width: 100%; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 25px;">
-                    <td><p><a href="../index.html">Главная</a></p></td>
-                    <td><p><a href="#">О нас</a></p></td>
-                    <td><p><a href="contacts.html">Контакты</a></p></td>
+            <nav>
+                <table>
+                    <tr>
+                        <td><p><a href="../index.html">Главная</a></p></td>
+                        <td><p><a href="#">Ещё</a></p></td>
+                        <td><p><a href="contacts.html">Контакты</a></p></td>
+                    </tr>
                 </table>
             </nav>
         </header>
-        <main>
-            <h1>О нас</h1>
-            <p>Мы лучшие в своем деле. Покупайте слонов у нас!</p>
+        <main style="align-items: center; display: flex; justify-content: center;" >
+            <section>
+                <div><h1>Чуть больше информации</h1>
+                    <h2>Работа</h2>
+                    <p>Я являюсь программистом в учреждении культуры, занимаюсь автоматизацией процессов, связанных с обработкой данных.</p> 
+                    <p>Поэтому курс от Skillfactory был как нельзя кстати.</p>
+                    <h2>Что я узнала</h2>
+                    <p>Благодаря обучению, я познакомилась с <a href="https://git-scm.com/">Git-ом</a>, научилась с ним работать 
+                        и даже получила дополнительную информацию о том, как развернуть систему на своём сервере. <br> 
+                    Конечно, сейчас мне это ни к чему, но интересно знать, что такое возможно. <em>(Да, я прочитала <a href="https://git-scm.com/book/ru/v2">&laquo;Pro Git&raquo;</a> от корки до корки)</em></p>
+                    <p>Я также создала свой профиль на <a href="https://github.com/settings/profile">GiiHub</a> <em>(&#128072; ссылочка ведет на него)</em> и разместила несколько своих первых репозиториев.</p>
+                    <p>Узнала про язык разметки <b>Markdown</b> и обязательно займусь оформлением своего профиля с помощью этих новых знаний.</p>
+                    <p>Когда-нибудь...</p>
+                    <p style="text-align: center;">обязательно...</p>
+                    <p style="text-align: right;"><em>непременно...</em></p>
+                    <p style="text-align: right; font-size: smaller;"><em>наверняка...</em></p>
+                </div>
+            </section>
         </main>
         <footer>
             <span>&copy;&nbsp;Skillfactory</span>
